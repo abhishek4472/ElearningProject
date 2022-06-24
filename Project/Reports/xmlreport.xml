@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="15" time="276.762015">
+<testcase classname="Compose Message" name="Enter valid information" time="23.182098">
+<system-out><![CDATA[Given click on messages tab.................................................passed
+When enter valid data username "Meghna Chakraborty" and subject"hello"......passed
+And click on send message...................................................passed
+Then verify the message username "Meghna Chakraborty".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Compose Message" name="Enter valid information 2" time="19.733739">
+<system-out><![CDATA[Given click on messages tab.................................................passed
+When enter valid data username "Abcd Pqrs" and subject"hola"................passed
+And click on send message...................................................passed
+Then verify the message username "Abcd Pqrs"................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Compose Message" name="Enter valid information 3" time="21.226888">
+<system-out><![CDATA[Given click on messages tab.................................................passed
+When enter valid data username "Anamika Anamika" and subject"bonjour".......passed
+And click on send message...................................................passed
+Then verify the message username "Anamika Anamika"..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Compose Message" name="Enter invalid information" time="16.917508">
+<system-out><![CDATA[Given click on messages tab.................................................passed
+When enter invalid data username "" and subject"hello"......................passed
+And click on send message...................................................passed
+Then verify the output message..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Compose Message" name="Enter invalid information 2" time="16.638608">
+<system-out><![CDATA[Given click on messages tab.................................................passed
+When enter invalid data username "" and subject"hola".......................passed
+And click on send message...................................................passed
+Then verify the output message..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Compose Message" name="Dont enter mandatory field" time="17.843769">
+<system-out><![CDATA[Given click on messages tab.................................................passed
+When enter valid data username..............................................passed
+And click on send message...................................................passed
+Then verify the error message...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="outbox" name="delete a message" time="16.41638">
+<system-out><![CDATA[Given click on outboxs......................................................passed
+When click on delete message................................................passed
+And select the alert........................................................passed
+Then check for validation message...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="outbox" name="select some messages" time="20.750663">
+<system-out><![CDATA[Given click on outboxs......................................................passed
+When select any given message...............................................passed
+Then check if the message is selected.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="outbox" name="open a message" time="18.671494">
+<system-out><![CDATA[Given click on outboxs......................................................passed
+When open a message using title title "hello"...............................passed
+Then check if message is opened.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="outbox" name="open a message 2" time="17.893884">
+<system-out><![CDATA[Given click on outboxs......................................................passed
+When open a message using title title "hola"................................passed
+Then check if message is opened.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="outbox" name="open a message 3" time="20.39434">
+<system-out><![CDATA[Given click on outboxs......................................................passed
+When open a message using title title "bonjour".............................passed
+Then check if message is opened.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search" name="enter in valid search data" time="16.952491">
+<system-out><![CDATA[Given click on outboxs......................................................passed
+When click on search and enter values value "hello".........................passed
+When click on search button.................................................passed
+Then check if message are avilable value"hello".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search" name="enter in valid search data 2" time="17.567472">
+<system-out><![CDATA[Given click on outboxs......................................................passed
+When click on search and enter values value "hola"..........................passed
+When click on search button.................................................passed
+Then check if message are avilable value"hola"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search" name="enter in valid search data 3" time="16.268366">
+<system-out><![CDATA[Given click on outboxs......................................................passed
+When click on search and enter values value "bonjour".......................passed
+When click on search button.................................................passed
+Then check if message are avilable value"bonjour"...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search" name="enter in valid search data 4" time="16.304315">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div//tbody//tr//td[2]//a[text()='Meghna Chakraborty']&quot;}&#10;  (Session info: chrome=102.0.5005.115)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'WIN-JO8IQI19CKC', ip: '192.168.1.195', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\003QUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56202}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 7de0b84a76eb42c3c049a5b650647785&#10;*** Element info: {Using=xpath, value=//div//tbody//tr//td[2]//a[text()='Meghna Chakraborty']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at stepdefinition.composeMessage.check_if_message_are_avilable_value(composeMessage.java:181)&#13;&#10;&#9;at ✽.check if message are avilable value&quot;Meghna Chakraborty&quot;(file:src/test/java/feature/searchs.feature:10)&#13;&#10;"><![CDATA[Given click on outboxs......................................................passed
+When click on search and enter values value "Meghna Chakraborty"............passed
+When click on search button.................................................passed
+Then check if message are avilable value"Meghna Chakraborty"................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div//tbody//tr//td[2]//a[text()='Meghna Chakraborty']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN-JO8IQI19CKC', ip: '192.168.1.195', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\003QUT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56202}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7de0b84a76eb42c3c049a5b650647785
+*** Element info: {Using=xpath, value=//div//tbody//tr//td[2]//a[text()='Meghna Chakraborty']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at stepdefinition.composeMessage.check_if_message_are_avilable_value(composeMessage.java:181)
+	at ✽.check if message are avilable value"Meghna Chakraborty"(file:src/test/java/feature/searchs.feature:10)
+]]></failure>
+</testcase>
+</testsuite>
